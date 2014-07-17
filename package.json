@@ -1,0 +1,24 @@
+{
+  "name": "sails-example",
+  "version": "0.0.1",
+  "description": "Example application with sails.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamarasaurus/sails-example.git"
+  },
+  "keywords": [
+    "sails",
+    "example",
+    "database"
+  ],
+  "author": "Tamara Chahine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tamarasaurus/sails-example/issues"
+  },
+  "homepage": "https://github.com/tamarasaurus/sails-example"
+}
