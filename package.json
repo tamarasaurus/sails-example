@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tamarasaurus/sails-example/issues"
   },
-  "homepage": "https://github.com/tamarasaurus/sails-example"
+  "homepage": "https://github.com/tamarasaurus/sails-example",
+  "directories": {
+    "example": "example"
+  }
 }
