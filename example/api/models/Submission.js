@@ -8,25 +8,37 @@
 
 module.exports = {
 
-  attributes: {
-  	id: 'integer',
-    name: {
-        type: 'string',
-        notEmpty: true
-    },
-    email: {
-      type: 'email', // Email type will get validated by the ORM
-      required: true
-    },
-    latitude: 'float',
-    longitude: 'float',
-    postcode: {
-        type: 'integer',
-        maxLength: 4
-    }
-    //city lat/lng from google
-    //postcode validated from list
-
-  }
+	attributes: {
+		id: {
+			type: 'int',
+			primaryKey: true,
+			autoIncrement: true
+		},
+		name: {
+			type: 'string',
+			notEmpty: true,
+			required: true
+		},
+		email: {
+			type: 'email', // Email type will get validated by the ORM
+			required: true,
+			notEmpty: true
+		},
+		latitude: {
+			type: 'float',
+			required: true,
+			notEmpty: true
+		},
+		longitude: {
+			type: 'float',
+			required: true,
+			notEmpty: true
+		},
+		postcode: {
+			type: 'integer',
+			notEmpty: true,
+			maxLength: 4
+		}
+	}
 
 };

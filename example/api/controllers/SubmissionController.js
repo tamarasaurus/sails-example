@@ -16,15 +16,30 @@
  */
 
 module.exports = {
-    
-  
+	destroyAll: function(req, res) {
+        Submission.find().done(function(err, submissions) {
+
+            for( var i = 0; i < submissions.length; i++){
+                submissions[i].destroy(function(err){
+                    console.log(err);
+                });
+            }
+        });
+
+        return res.view({
+            message: 'All records destroyed',
+            layout: 'message'
+        });
+
+	},
 
 
-  /**
-   * Overrides for the settings in `config/controllers.js`
-   * (specific to SubmissionController)
-   */
-  _config: {}
 
-  
+	/**
+	 * Overrides for the settings in `config/controllers.js`
+	 * (specific to SubmissionController)
+	 */
+	_config: {}
+
+
 };
